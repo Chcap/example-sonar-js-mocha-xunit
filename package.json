@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "FooBar",
+  "version": "0.0.0",
+  "engines": {
+    "node": "*"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "grunt": "^0.4.5",
+    "grunt-mocha-test": "^0.12.4",
+    "grunt-sonar-runner": "^2.3.1",
+    "matchdep": "^0.3.0",
+    "mocha": "^2.0.1",
+    "mocha-sonar-reporter": "^0.1.0",
+    "xunit-file": "0.0.5"
+  }
+}
