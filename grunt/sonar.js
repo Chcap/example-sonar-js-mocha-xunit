@@ -1,7 +1,7 @@
 module.exports = function (grunt) {
 
 	grunt.registerTask('sonar', 'generate xunit report and publish to sonar server', [
-		'test:xunit-file',
+		'test:sonar',
 		'sonarRunner:analysis'
 	]);
 
@@ -23,13 +23,13 @@ module.exports = function (grunt) {
 					projectKey: 'fw-admin',
 					projectName: 'FooBar',
 					projectVersion: '1.0',
-					sources: ["src"].join(','),
-					exclusions: "",
-					test: ["test"].join(','),
+					sources: 'src',
+					//exclusions: '',
+					tests: 'test',
 					language: 'js',
 					sourceEncoding: 'UTF-8',
 					javascript: {
-						jstest: {
+						jstestdriver: {
 							reportsPath: "."
 						}
 					}

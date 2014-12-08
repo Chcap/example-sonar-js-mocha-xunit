@@ -16,30 +16,34 @@ module.exports = function(grunt){
     'mochaTest:sonar'
   ]);
 
+  var conf = require('../package.json');
+  process.env.npm_package_config_mocha_sonar_reporter_testdir = conf.config['mocha-sonar-reporter'].testdir;
+
   return {
     unit: {
       options: {
         reporter: 'spec'
       },
-      src: ['test/*.js']
+      src: ['test/**/*.js']
     },
     xunit: {
       options: {
         reporter: 'xunit'
       },
-      src: ['test/*.js']
+      src: ['test/**/*.js']
     },
     'xunit-file': {
       options: {
         reporter: 'xunit-file'
       },
-      src: ['test/*.js']
+      src: ['test/**/*.js']
     },
     sonar: {
       options: {
-        reporter: 'mocha-sonar-reporter'
+        reporter: 'mocha-sonar-reporter',
+        captureFile: 'TEST-all.xml'
       },
-      src: ['test/*.js']
+      src: ['test/**/*.js']
     }
   };
 };

@@ -14,5 +14,10 @@
     "mocha": "^2.0.1",
     "mocha-sonar-reporter": "^0.1.0",
     "xunit-file": "0.0.5"
+  },
+  "config": {
+    "mocha-sonar-reporter": {
+      "testdir": "test"
+    }
   }
 }

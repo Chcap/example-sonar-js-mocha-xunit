@@ -1,6 +1,6 @@
 
 var expect = require('chai').expect;
-var bar = require('../src/bar.js');
+var bar = require('../src/toto/bar.js');
 
 describe('Bar', function() {
 	describe('#salut', function() {
