@@ -1,6 +1,6 @@
 
 var expect = require('chai').expect;
-var foo = require('../../src/Foo.js');
+var foo = require('../../src/foo.js');
 
 describe('Foo', function() {
 	describe('#hello', function() {
